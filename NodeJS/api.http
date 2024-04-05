@@ -2,7 +2,27 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-    "title": "United",
-    "details": "Um evento que une pessoas",
-    "maximunAttendees": 101
+    "title": "Alone",
+    "details": "Um evento que não une pessoas",
+    "maximunAttendees": 1
 }
+
+###
+
+POST http://localhost:3333/events/c240531b-2357-473f-9314-baafd8eae150/attendees
+Content-Type: application/json
+
+{
+  "name": "Luís Silva",
+  "email": "luisfelipeluis48@gmail.com"
+}
+
+
+
+###
+
+GET http://localhost:3333/events/c240531b-2357-473f-9314-baafd8eae150
+
+###
+
+GET http://localhost:3333/attendees/2/badge
